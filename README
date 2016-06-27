@@ -1,0 +1,24 @@
+
+================================================================================
+Human Activity Recognition Using Smartphones Dataset 
+for Course3AssignmentProject
+================================================================================
+
+This github repo includes the following files:
+================================================================================
+1. README.txt
+2. tidy.txt : dataset.
+3. run_analysis.R : r script.
+4. Codebook.txt : list of variables.
+
+
+Original Dataset is provided by the following study:
+================================================================================
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+
+Original Dataset Download:
+================================================================================
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+#4. The README that explains the analysis files is clear and understandable.

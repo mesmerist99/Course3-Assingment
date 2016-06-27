@@ -1,0 +1,140 @@
+================================================================================
+Codebook 
+================================================================================
+
+================================================================================
+Measurement variables
+================================================================================
+derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+TimeBodyAcc-XYZ
+TimeGravityAcc-XYZ
+TimeBodyAccJerk-XYZ
+TimeBodyGyro-XYZ
+TimeBodyGyroJerk-XYZ
+TimeBodyAccMag
+TimeGravityAccMag
+TimeBodyAccJerkMag
+TimeBodyGyroMag
+TimeBodyGyroJerkMag
+FrequencyBodyAcc-XYZ
+FrequencyBodyAccJerk-XYZ
+FrequencyBodyGyro-XYZ
+FrequencyBodyAccMag
+FrequencyBodyAccJerkMag
+FrequencyBodyGyroMag
+FrequencyBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+TimeBodyAccMean
+TimeBodyAccJerkMean
+TimeBodyGyroMean
+TimeBodyGyroJerkMean
+
+
+================================================================================
+Categorical(ID) variables
+================================================================================
+
+- activity : activity name. has 6 classes; WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+- subject : unique number for subjects.identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
+
+
+================================================================================
+The complete list of variables of each feature vector
+================================================================================
+ [1] "activity"                               
+ [2] "subject"                                
+ [3] "TimeBodyAcc-mean()-X"                   
+ [4] "TimeBodyAcc-mean()-Y"                   
+ [5] "TimeBodyAcc-mean()-Z"                   
+ [6] "TimeGravityAcc-mean()-X"                
+ [7] "TimeGravityAcc-mean()-Y"                
+ [8] "TimeGravityAcc-mean()-Z"                
+ [9] "TimeBodyAccJerk-mean()-X"               
+[10] "TimeBodyAccJerk-mean()-Y"               
+[11] "TimeBodyAccJerk-mean()-Z"               
+[12] "TimeBodyGyro-mean()-X"                  
+[13] "TimeBodyGyro-mean()-Y"                  
+[14] "TimeBodyGyro-mean()-Z"                  
+[15] "TimeBodyGyroJerk-mean()-X"              
+[16] "TimeBodyGyroJerk-mean()-Y"              
+[17] "TimeBodyGyroJerk-mean()-Z"              
+[18] "TimeBodyAccMag-mean()"                  
+[19] "TimeGravityAccMag-mean()"               
+[20] "TimeBodyAccJerkMag-mean()"              
+[21] "TimeBodyGyroMag-mean()"                 
+[22] "TimeBodyGyroJerkMag-mean()"             
+[23] "FrequencyBodyAcc-mean()-X"              
+[24] "FrequencyBodyAcc-mean()-Y"              
+[25] "FrequencyBodyAcc-mean()-Z"              
+[26] "FrequencyBodyAcc-meanFreq()-X"          
+[27] "FrequencyBodyAcc-meanFreq()-Y"          
+[28] "FrequencyBodyAcc-meanFreq()-Z"          
+[29] "FrequencyBodyAccJerk-mean()-X"          
+[30] "FrequencyBodyAccJerk-mean()-Y"          
+[31] "FrequencyBodyAccJerk-mean()-Z"          
+[32] "FrequencyBodyAccJerk-meanFreq()-X"      
+[33] "FrequencyBodyAccJerk-meanFreq()-Y"      
+[34] "FrequencyBodyAccJerk-meanFreq()-Z"      
+[35] "FrequencyBodyGyro-mean()-X"             
+[36] "FrequencyBodyGyro-mean()-Y"             
+[37] "FrequencyBodyGyro-mean()-Z"             
+[38] "FrequencyBodyGyro-meanFreq()-X"         
+[39] "FrequencyBodyGyro-meanFreq()-Y"         
+[40] "FrequencyBodyGyro-meanFreq()-Z"         
+[41] "FrequencyBodyAccMag-mean()"             
+[42] "FrequencyBodyAccMag-meanFreq()"         
+[43] "FrequencyBodyBodyAccJerkMag-mean()"     
+[44] "FrequencyBodyBodyAccJerkMag-meanFreq()" 
+[45] "FrequencyBodyBodyGyroMag-mean()"        
+[46] "FrequencyBodyBodyGyroMag-meanFreq()"    
+[47] "FrequencyBodyBodyGyroJerkMag-mean()"    
+[48] "FrequencyBodyBodyGyroJerkMag-meanFreq()"
+[49] "TimeBodyAcc-std()-X"                    
+[50] "TimeBodyAcc-std()-Y"                    
+[51] "TimeBodyAcc-std()-Z"                    
+[52] "TimeGravityAcc-std()-X"                 
+[53] "TimeGravityAcc-std()-Y"                 
+[54] "TimeGravityAcc-std()-Z"                 
+[55] "TimeBodyAccJerk-std()-X"                
+[56] "TimeBodyAccJerk-std()-Y"                
+[57] "TimeBodyAccJerk-std()-Z"                
+[58] "TimeBodyGyro-std()-X"                   
+[59] "TimeBodyGyro-std()-Y"                   
+[60] "TimeBodyGyro-std()-Z"                   
+[61] "TimeBodyGyroJerk-std()-X"               
+[62] "TimeBodyGyroJerk-std()-Y"               
+[63] "TimeBodyGyroJerk-std()-Z"               
+[64] "TimeBodyAccMag-std()"                   
+[65] "TimeGravityAccMag-std()"                
+[66] "TimeBodyAccJerkMag-std()"               
+[67] "TimeBodyGyroMag-std()"                  
+[68] "TimeBodyGyroJerkMag-std()"              
+[69] "FrequencyBodyAcc-std()-X"               
+[70] "FrequencyBodyAcc-std()-Y"               
+[71] "FrequencyBodyAcc-std()-Z"               
+[72] "FrequencyBodyAccJerk-std()-X"           
+[73] "FrequencyBodyAccJerk-std()-Y"           
+[74] "FrequencyBodyAccJerk-std()-Z"           
+[75] "FrequencyBodyGyro-std()-X"              
+[76] "FrequencyBodyGyro-std()-Y"              
+[77] "FrequencyBodyGyro-std()-Z"              
+[78] "FrequencyBodyAccMag-std()"              
+[79] "FrequencyBodyBodyAccJerkMag-std()"      
+[80] "FrequencyBodyBodyGyroMag-std()"         
+[81] "FrequencyBodyBodyGyroJerkMag-std()"
